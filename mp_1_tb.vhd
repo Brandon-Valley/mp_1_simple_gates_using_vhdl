@@ -1,3 +1,5 @@
+-- python C:\Users\Brandon\Documents\Personal_Projects\my_utils\modelsim_utils\auto_run.py
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
@@ -36,7 +38,7 @@ begin
     apply_test('0', '1');
     apply_test('1', '1');
     apply_test('0', '0');
-    apply_test('1', '1');
+
 
     
     wait;
