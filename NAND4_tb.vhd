@@ -18,7 +18,7 @@ architecture verify of NAND4_tb is
 
 begin
   -- Model Options:  cmpnt, equation, behavior
-  duv: entity work.NAND4(equation)
+  duv: entity work.NAND4(behavior)
     port map( i_a => i_a,
               i_b => i_b,
               i_c => i_c,

@@ -11,8 +11,23 @@ entity NAND4 is
          o_f : out std_logic);
 end NAND4;
 
+
 --------------------------------
--- equation model
+-- Behavior Model
+--------------------------------
+architecture behavior of NAND4 is
+  begin
+    o_f <= '0' when (i_a = '1' and 
+                     i_b = '1' and 
+                     i_c = '1' and 
+                     i_d = '1')
+               else
+           '1';
+end architecture behavior;
+
+
+--------------------------------
+-- Equation Model
 --------------------------------
 
 architecture equation of NAND4 is
@@ -22,13 +37,8 @@ end architecture equation;
 
 
 
-
-
-
-
-
 --------------------------------
--- component model
+-- Component Model
 --------------------------------
 architecture cmpnt of NAND4 is
   component AND2 is
