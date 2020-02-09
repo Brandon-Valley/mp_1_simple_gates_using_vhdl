@@ -8,10 +8,10 @@ entity NOT1 is
          o_f : out std_logic);
 end NOT1;
 
-architecture eqn of NOT1 is
+architecture equation of NOT1 is
   begin
     o_f <= not i_a;
-end eqn;
+end equation;
 
 
 

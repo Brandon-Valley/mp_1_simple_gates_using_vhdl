@@ -17,7 +17,8 @@ architecture verify of NAND4_tb is
   signal input : std_logic_vector (3 downto 0) := "0000";
 
 begin
-  duv: entity work.NAND4(cmpnt)
+  -- Model Options:  cmpnt, equation, behavior
+  duv: entity work.NAND4(equation)
     port map( i_a => i_a,
               i_b => i_b,
               i_c => i_c,

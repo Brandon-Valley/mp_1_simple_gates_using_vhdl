@@ -4,7 +4,7 @@ Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity AND2
--- Compiling architecture behavior of AND2
+-- Compiling architecture equation of AND2
 
 } {} {}} C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/mp_1.vhd {1 {vcom -work work -2002 -explicit C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/mp_1.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
@@ -13,6 +13,14 @@ Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Loading package std_logic_1164
 -- Compiling entity and_gate
 -- Compiling architecture behavior of and_gate
+
+} {} {}} C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NOT1.vhd {1 {vcom -work work -2002 -explicit C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NOT1.vhd
+Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity NOT1
+-- Compiling architecture equation of NOT1
 
 } {} {}} C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NAND4_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NAND4_tb.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012

@@ -9,10 +9,10 @@ entity AND2 is
          o_f : out std_logic);
 end AND2;
 
-architecture behavior of AND2 is
+architecture equation of AND2 is
   begin
     o_f <= i_a and i_b;
-end behavior;
+end equation;
 
 
 

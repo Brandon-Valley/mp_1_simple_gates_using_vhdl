@@ -11,23 +11,41 @@ entity NAND4 is
          o_f : out std_logic);
 end NAND4;
 
+--------------------------------
+-- equation model
+--------------------------------
+
+architecture equation of NAND4 is
+  begin
+    o_f <= not (i_a and i_b and i_c and i_d);
+end architecture equation;
+
+
+
+
+
+
+
+
+--------------------------------
 -- component model
+--------------------------------
 architecture cmpnt of NAND4 is
   component AND2 is
     port ( i_a : in  std_logic;
            i_b : in  std_logic;
            o_f : out std_logic);
-    end component AND2;
+  end component AND2;
     
   component NOT1 is
     port ( i_a : in  std_logic;
            o_f : out std_logic);
-    end component NOT1;
+  end component NOT1;
     
-    -- temp outs for AND2s
-    signal f_1_o : std_logic; 
-    signal f_2_o : std_logic; 
-    signal f_3_o : std_logic; 
+  -- temp outs for AND2s
+  signal f_1_o : std_logic; 
+  signal f_2_o : std_logic; 
+  signal f_3_o : std_logic; 
     
   begin
     AND2_1 : AND2 port map (i_a,   i_b,   f_1_o);
