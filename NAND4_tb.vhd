@@ -25,20 +25,21 @@ begin
               
   apply_test_cases : process is
     procedure apply_test
-      ( a_test, b_test : in std_logic) is
+      ( a_test, b_test, c_test, d_test : in std_logic) is
     begin 
       i_a <= a_test;
       i_b <= b_test;
+      i_c <= c_test;
+      i_d <= d_test;
       wait for 1 ms;
     end procedure apply_test;
     
   begin
     -- test
-    apply_test('0', '0');
-    apply_test('0', '1');
-    apply_test('1', '1');
-    apply_test('0', '0');
-    apply_test('1', '1');
+    apply_test('0', '0', '0', '0');
+    apply_test('0', '1', '0', '0');
+    apply_test('1', '1', '1', '1');
+
 
     
     wait;
