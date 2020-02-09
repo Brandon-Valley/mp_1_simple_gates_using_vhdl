@@ -23,18 +23,28 @@ end architecture equation;
 
 
 
--- --------------------------------
--- -- Behavior Model
--- --------------------------------
--- architecture behavior of XOR4 is
-  -- begin
+--------------------------------
+-- Behavior Model
+--------------------------------
+architecture behavior of XOR4 is
+  begin
     -- o_f <= '0' when (i_a = '1' and 
                      -- i_b = '1' and 
                      -- i_c = '1' and 
                      -- i_d = '1')
                -- else
            -- '1';
--- end architecture behavior;
+           
+    o_f <= '1' when (i_a = '0' and i_b = '0' and i_c = '0' and i_d = '1') else
+           '1' when (i_a = '0' and i_b = '0' and i_c = '1' and i_d = '0') else
+           '1' when (i_a = '0' and i_b = '1' and i_c = '0' and i_d = '0') else
+           '1' when (i_a = '1' and i_b = '0' and i_c = '0' and i_d = '0') else
+           '1' when (i_a = '0' and i_b = '1' and i_c = '1' and i_d = '1') else
+           '1' when (i_a = '1' and i_b = '0' and i_c = '1' and i_d = '1') else
+           '1' when (i_a = '1' and i_b = '1' and i_c = '0' and i_d = '1') else
+           '1' when (i_a = '1' and i_b = '1' and i_c = '1' and i_d = '0') else
+           '0';
+end architecture behavior;
 
 
 
