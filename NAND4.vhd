@@ -11,6 +11,7 @@ entity NAND4 is
          o_f : out std_logic);
 end NAND4;
 
+-- component model
 architecture cmpnt of NAND4 is
   component AND2 is
     port ( i_a : in  std_logic;
@@ -18,16 +19,25 @@ architecture cmpnt of NAND4 is
            o_f : out std_logic);
     end component AND2;
     
+  component NOT1 is
+    port ( i_a : in  std_logic;
+           o_f : out std_logic);
+    end component NOT1;
+    
     -- temp outs for AND2s
     signal f_1_o : std_logic; 
     signal f_2_o : std_logic; 
+    signal f_3_o : std_logic; 
     
   begin
     AND2_1 : AND2 port map (i_a,   i_b,   f_1_o);
     AND2_2 : AND2 port map (i_c,   i_d,   f_2_o);
-    AND2_3 : AND2 port map (f_1_o, f_2_o, o_f);
-  end architecture cmpnt;
+    AND2_3 : AND2 port map (f_1_o, f_2_o, f_3_o);
+    NOT1_1 : NOT1 port map (f_3_o, o_f);
+end architecture cmpnt;
     
+    
+
 
 
 
