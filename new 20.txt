@@ -1,3 +1,0 @@
-vsim acc work.gate_1_tb -do run_cmd.do
-
-vsim -voptargs=+acc work.gate_1_tb -do run_cmd.do

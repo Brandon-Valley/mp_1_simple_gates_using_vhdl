@@ -16,7 +16,7 @@ architecture verify of nand_4_tb is
   signal o_f : std_logic;
 
 begin
-  duv: entity work.nand_4(cmpnt)
+  duv: entity work.NAND4(cmpnt)
     port map( i_a => i_a,
               i_b => i_b,
               i_c => i_c,

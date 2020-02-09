@@ -1,10 +1,10 @@
-C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/nand_4.vhd {1 {vcom -work work -2002 -explicit C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/nand_4.vhd
+C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NAND4.vhd {1 {vcom -work work -2002 -explicit C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NAND4.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity nand_4
--- Compiling architecture cmpnt of nand_4
+-- Compiling entity NAND4
+-- Compiling architecture cmpnt of NAND4
 
 } {} {}} C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/AND2.vhd {1 {vcom -work work -2002 -explicit C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/AND2.vhd
 Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012

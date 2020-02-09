@@ -3,15 +3,15 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 
-entity nand_4 is
+entity NAND4 is
   port ( i_a : in  std_logic;
          i_b : in  std_logic;
          i_c : in  std_logic;
          i_d : in  std_logic;
          o_f : out std_logic);
-end nand_4;
+end NAND4;
 
-architecture cmpnt of nand_4 is
+architecture cmpnt of NAND4 is
   component AND2 is
     port ( i_a : in  std_logic;
            i_b : in  std_logic;
