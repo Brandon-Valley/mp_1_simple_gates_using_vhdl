@@ -18,12 +18,14 @@ architecture cmpnt of NAND4 is
            o_f : out std_logic);
     end component AND2;
     
-    signal f_1_o : std_logic; -- temp outs for AND2s
+    -- temp outs for AND2s
+    signal f_1_o : std_logic; 
     signal f_2_o : std_logic; 
-    signal f_3_o : std_logic; 
     
   begin
-    AND2_1 : AND2 port map (i_a, i_b, o_f);
+    AND2_1 : AND2 port map (i_a,   i_b,   f_1_o);
+    AND2_2 : AND2 port map (i_c,   i_d,   f_2_o);
+    AND2_3 : AND2 port map (f_1_o, f_2_o, o_f);
   end architecture cmpnt;
     
 
