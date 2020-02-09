@@ -15,7 +15,7 @@ L6
 VJU4K[Y5E1KkZXLT^Z23H50
 Z6 OV;C;10.1b;51
 32
-Z7 !s108 1581272751.805000
+Z7 !s108 1581275435.228000
 Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/AND2.vhd|
 Z9 !s107 C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/AND2.vhd|
 Z10 o-work work -2002 -explicit -O0
@@ -67,7 +67,7 @@ L6
 VOWI4cYZWPCWM;N5[ad:gV3
 R6
 32
-Z17 !s108 1581272751.427000
+Z17 !s108 1581275434.870000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/mp_1.vhd|
 Z19 !s107 C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/mp_1.vhd|
 R10
@@ -127,7 +127,7 @@ R11
 !i10b 1
 !s100 zhXRFON1aVW9O^NA1O6`J1
 Enand4
-Z27 w1581271780
+Z27 w1581273037
 R1
 R2
 R3
@@ -138,7 +138,7 @@ L6
 ViBY7dL?ZCNT=GahoKWEX13
 R6
 32
-Z30 !s108 1581272751.978000
+Z30 !s108 1581275435.385000
 Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NAND4.vhd|
 Z32 !s107 C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NAND4.vhd|
 R10
@@ -149,8 +149,8 @@ Acmpnt
 R1
 R2
 Z33 DEx4 work 5 nand4 0 22 iBY7dL?ZCNT=GahoKWEX13
-l60
-L43
+l61
+L44
 VP>lb6bGZ853oSmDY2k6bj2
 R6
 32
@@ -159,30 +159,14 @@ R31
 R32
 R10
 R11
-!s100 BiJf^TSZ_oGLK0^W3igDi0
-!i10b 1
-Aequation
-R1
-R2
-R33
-l34
-L33
-VN4]LB7`l`^ecTE1=JmK><3
-R6
-32
-R30
-R31
-R32
-R10
-R11
-!s100 cY19Zz9?gA@VC``@:cz941
+!s100 9V]E=8K>^Gd^NoJi4o3600
 !i10b 1
 Abehavior
 R1
 R2
 R33
-l19
-L18
+l30
+L29
 VDj`YkmW8m>M2O]gjg`MYS1
 R6
 32
@@ -191,7 +175,23 @@ R31
 R32
 R10
 R11
-!s100 [7>VGU3mgRL1MIk[F;ilg3
+!s100 fezJZ9:7jH9bHYZ[M9Ci22
+!i10b 1
+Aequation
+R1
+R2
+R33
+l20
+L19
+VN4]LB7`l`^ecTE1=JmK><3
+R6
+32
+R30
+R31
+R32
+R10
+R11
+!s100 bY?TELK`P>UC3]ZV<gWT=0
 !i10b 1
 Enand4_tb
 Z34 w1581272472
@@ -207,7 +207,7 @@ L8
 VF2P<gib5EO>;X;<KFVdWI3
 R6
 32
-Z39 !s108 1581272752.229000
+Z39 !s108 1581275435.632000
 Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NAND4_tb.vhd|
 Z41 !s107 C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NAND4_tb.vhd|
 R10
@@ -224,7 +224,6 @@ DEx4 work 8 nand4_tb 0 22 F2P<gib5EO>;X;<KFVdWI3
 l19
 L11
 VLg4?kg;`4ezR5EJQeQ_:C2
-!s100 3PBm0ak5OzbU1?X8W9eZ:3
 R6
 32
 R39
@@ -232,6 +231,7 @@ R40
 R41
 R10
 R11
+!s100 3PBm0ak5OzbU1?X8W9eZ:3
 !i10b 1
 Enand_4
 R13
@@ -282,7 +282,7 @@ L8
 VHK=o61QVYZiJoj[NGkhZ_2
 R6
 32
-Z48 !s108 1581272751.624000
+Z48 !s108 1581275435.056000
 R25
 R26
 R10
@@ -318,31 +318,31 @@ Z51 FC:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_ga
 l0
 L6
 VHCH@GmQdmLZi71SMlM>ig0
-!s100 S:;S`Eh9cd]zKMYUh`bZb2
 R6
 32
-!i10b 1
-Z52 !s108 1581272752.403000
+Z52 !s108 1581275435.808000
 Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NOT1.vhd|
 Z54 !s107 C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NOT1.vhd|
 R10
 R11
+!s100 S:;S`Eh9cd]zKMYUh`bZb2
+!i10b 1
 Aequation
 R1
 R2
 Z55 DEx4 work 4 not1 0 22 HCH@GmQdmLZi71SMlM>ig0
 l12
 L11
-Z56 VEQ4hWoE^m?RK:2]Jda<UR1
-Z57 !s100 X]=b_igczFJW@dagC6haP3
+VEQ4hWoE^m?RK:2]Jda<UR1
 R6
 32
-!i10b 1
 R52
 R53
 R54
 R10
 R11
+!s100 X]=b_igczFJW@dagC6haP3
+!i10b 1
 Aeqn
 R1
 R2
@@ -356,7 +356,98 @@ R53
 R10
 R11
 w1581270009
-Z58 !s107 C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/NOT1.vhd|
+R54
 !s108 1581270214.491000
 !s100 cZ`@IO:LT6nEVR`3RCc7I0
 !i10b 1
+Eor4
+Z56 w1581275431
+R1
+R2
+R3
+Z57 8C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/OR4.vhd
+Z58 FC:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/OR4.vhd
+l0
+L6
+VAYMdd8]hGlHYH4_VUmlgn0
+R6
+32
+Z59 !s108 1581275435.953000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/OR4.vhd|
+Z61 !s107 C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/OR4.vhd|
+R10
+R11
+!s100 836i:Q=2]a>h5J6e25?z`1
+!i10b 1
+Abehavior
+R1
+R2
+Z62 DEx4 work 3 or4 0 22 AYMdd8]hGlHYH4_VUmlgn0
+l28
+L27
+V>aW4HW5_Z?Q=IDQEUa@[90
+R6
+32
+R59
+R60
+R61
+R10
+R11
+!s100 Kk_cSOj?>gVF<almN^SBe3
+!i10b 1
+Aequation
+R1
+R2
+R62
+l19
+L18
+Vb?2aaMnlHKKnh:fkb6MWa3
+!s100 6AK8b0hCcSC>kn1=XaWlL3
+R6
+32
+R59
+R60
+R61
+R10
+R11
+!i10b 1
+Eor4_tb
+Z63 w1581275380
+R35
+R36
+R1
+R2
+R3
+Z64 8C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/OR4_tb.vhd
+Z65 FC:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/OR4_tb.vhd
+l0
+L8
+ViDKH5DPec7<66[dfBFBA50
+!s100 8BI:n:Ba[Y@HPFFIQ]SF:1
+R6
+32
+!i10b 1
+Z66 !s108 1581275436.138000
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/OR4_tb.vhd|
+Z68 !s107 C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/OR4_tb.vhd|
+R10
+R11
+Averify
+R62
+R35
+R36
+R1
+R2
+Z69 DEx4 work 6 or4_tb 0 22 iDKH5DPec7<66[dfBFBA50
+l19
+L11
+Z70 V<iI1]8XiIlmmF;K0`KS=d0
+Z71 !s100 IG>O0AVR8`[Q_zU75P@bn2
+R6
+32
+!i10b 1
+R66
+R67
+R68
+R10
+R11

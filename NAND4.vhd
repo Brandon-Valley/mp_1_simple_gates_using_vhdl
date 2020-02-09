@@ -13,6 +13,17 @@ end NAND4;
 
 
 --------------------------------
+-- Equation Model
+--------------------------------
+
+architecture equation of NAND4 is
+  begin
+    o_f <= not (i_a and i_b and i_c and i_d);
+end architecture equation;
+
+
+
+--------------------------------
 -- Behavior Model
 --------------------------------
 architecture behavior of NAND4 is
@@ -24,16 +35,6 @@ architecture behavior of NAND4 is
                else
            '1';
 end architecture behavior;
-
-
---------------------------------
--- Equation Model
---------------------------------
-
-architecture equation of NAND4 is
-  begin
-    o_f <= not (i_a and i_b and i_c and i_d);
-end architecture equation;
 
 
 
