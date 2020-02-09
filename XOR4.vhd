@@ -22,19 +22,11 @@ architecture equation of XOR4 is
 end architecture equation;
 
 
-
 --------------------------------
 -- Behavior Model
 --------------------------------
 architecture behavior of XOR4 is
   begin
-    -- o_f <= '0' when (i_a = '1' and 
-                     -- i_b = '1' and 
-                     -- i_c = '1' and 
-                     -- i_d = '1')
-               -- else
-           -- '1';
-           
     o_f <= '1' when (i_a = '0' and i_b = '0' and i_c = '0' and i_d = '1') else
            '1' when (i_a = '0' and i_b = '0' and i_c = '1' and i_d = '0') else
            '1' when (i_a = '0' and i_b = '1' and i_c = '0' and i_d = '0') else
@@ -47,33 +39,25 @@ architecture behavior of XOR4 is
 end architecture behavior;
 
 
-
--- --------------------------------
--- -- Component Model
--- --------------------------------
--- architecture cmpnt of XOR4 is
-  -- component AND2 is
-    -- port ( i_a : in  std_logic;
-           -- i_b : in  std_logic;
-           -- o_f : out std_logic);
-  -- end component AND2;
+--------------------------------
+-- Component Model
+--------------------------------
+architecture cmpnt of XOR4 is
+  component XOR2 is
+    port ( i_a : in  std_logic;
+           i_b : in  std_logic;
+           o_f : out std_logic);
+  end component XOR2;
     
-  -- component NOT1 is
-    -- port ( i_a : in  std_logic;
-           -- o_f : out std_logic);
-  -- end component NOT1;
+  -- temp outs for AND2s
+  signal f_1_o : std_logic; 
+  signal f_2_o : std_logic; 
     
-  -- -- temp outs for AND2s
-  -- signal f_1_o : std_logic; 
-  -- signal f_2_o : std_logic; 
-  -- signal f_3_o : std_logic; 
-    
-  -- begin
-    -- AND2_1 : AND2 port map (i_a,   i_b,   f_1_o);
-    -- AND2_2 : AND2 port map (i_c,   i_d,   f_2_o);
-    -- AND2_3 : AND2 port map (f_1_o, f_2_o, f_3_o);
-    -- NOT1_1 : NOT1 port map (f_3_o, o_f);
--- end architecture cmpnt;
+  begin
+    XOR2_1 : XOR2 port map (i_a,   i_b,   f_1_o);
+    XOR2_2 : XOR2 port map (i_c,   i_d,   f_2_o);
+    XOR2_3 : XOR2 port map (f_1_o, f_2_o, o_f);
+end architecture cmpnt;
     
     
 
