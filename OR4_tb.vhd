@@ -18,7 +18,7 @@ architecture verify of OR4_tb is
 
 begin
   -- Model Options:  cmpnt, equation, behavior
-  duv: entity work.OR4(behavior)
+  duv: entity work.OR4(cmpnt)
     port map( i_a => i_a,
               i_b => i_b,
               i_c => i_c,
