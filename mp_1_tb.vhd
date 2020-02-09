@@ -1,36 +1,41 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
 
 
-entity gate_1_tb is
-end entity gate_1_tb;
+entity nand_4_tb is
+end entity nand_4_tb;
 
-architecture verify of gate_1_tb is
-  signal A : std_logic;
-  signal B : std_logic;
-  signal F : std_logic;  
+architecture verify of nand_4_tb is
+  signal i_a : std_logic;
+  signal i_b : std_logic;
+  signal i_c : std_logic;
+  signal i_d : std_logic;
+  signal o_f : std_logic;
 
 begin
-  duv: entity work.and_gate(behavior)
-    port map( A => A,
-              B => B,
-              F => F);
+  duv: entity work.nand_4(cmpnt)
+    port map( i_a => i_a,
+              i_b => i_b,
+              i_c => i_c,
+              i_d => i_d,
+              o_f => o_f);
               
   apply_test_cases : process is
     procedure apply_test
-      ( a_test ,b_test : in std_logic) is
+      ( a_test, b_test : in std_logic) is
     begin 
-      A <= a_test;
-      B <= b_test;
+      i_a <= a_test;
+      i_b <= b_test;
       wait for 1 ms;
     end procedure apply_test;
     
   begin
+    -- test
     apply_test('0', '0');
     apply_test('0', '1');
-    apply_test('1', '0');
-    apply_test('1', '1');
-    apply_test('0', '0');
+
+    
     wait;
 end process apply_test_cases;
 
