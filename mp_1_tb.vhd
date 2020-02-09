@@ -34,6 +34,8 @@ begin
     -- test
     apply_test('0', '0');
     apply_test('0', '1');
+    apply_test('1', '1');
+    apply_test('0', '0');
 
     
     wait;
