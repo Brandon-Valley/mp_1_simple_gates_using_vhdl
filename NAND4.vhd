@@ -39,9 +39,9 @@ end architecture behavior;
 
 
 --------------------------------
--- Component Model
+-- Component Model - Primitive
 --------------------------------
-architecture cmpnt of NAND4 is
+architecture cmpnt_prim of NAND4 is
   component AND2 is
     port ( i_a : in  std_logic;
            i_b : in  std_logic;
@@ -63,8 +63,32 @@ architecture cmpnt of NAND4 is
     AND2_2 : AND2 port map (i_c,   i_d,   f_2_o);
     AND2_3 : AND2 port map (f_1_o, f_2_o, f_3_o);
     NOT1_1 : NOT1 port map (f_3_o, o_f);
-end architecture cmpnt;
+end architecture cmpnt_prim;
     
+    
+--------------------------------
+-- Component Model - 2 Input Self
+--------------------------------
+architecture cmpnt_self of NAND4 is
+  component NAND2 is
+    port ( i_a : in  std_logic;
+           i_b : in  std_logic;
+           o_f : out std_logic);
+  end component NAND2;
+    
+  -- temp outs for AND2s
+  signal f_1_o : std_logic; 
+  signal f_2_o : std_logic; 
+  signal f_3_o : std_logic; 
+  signal f_4_o : std_logic; 
+    
+  begin
+    NAND2_1 : NAND2 port map (i_a,   i_b,   f_1_o);
+    NAND2_2 : NAND2 port map (f_1_o, f_1_o, f_2_o); -- NOT
+    NAND2_3 : NAND2 port map (i_c,   i_d,   f_3_o);
+    NAND2_4 : NAND2 port map (f_3_o, f_3_o, f_4_o); -- NOT
+    NAND2_5 : NAND2 port map (f_2_o, f_4_o, o_f);
+end architecture cmpnt_self;
     
 
 

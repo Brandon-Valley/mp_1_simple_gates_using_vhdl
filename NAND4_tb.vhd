@@ -1,4 +1,4 @@
--- python C:\Users\Brandon\Documents\Personal_Projects\my_utils\modelsim_utils\auto_run.py
+-- python C:\Users\Brandon\Documents\Personal_Projects\my_utils\modelsim_utils\auto_run.py -d run_cmd__NAND4.do
 
 library ieee;
 use ieee.std_logic_1164.all;
@@ -17,8 +17,8 @@ architecture verify of NAND4_tb is
   signal input : std_logic_vector (3 downto 0) := "0000";
 
 begin
-  -- Model Options:  cmpnt, equation, behavior
-  duv: entity work.NAND4(behavior)
+  -- Model Options:  cmpnt_prim, cmpnt_self, equation, behavior
+  duv: entity work.NAND4(cmpnt_self)
     port map( i_a => i_a,
               i_b => i_b,
               i_c => i_c,
@@ -41,14 +41,6 @@ begin
       apply_test(input(3), input(2), input(1), input(0));
       input <= input + "0001";
      end loop;
-  
-  
-  
-    -- -- test
-    -- apply_test('0', '0', '0', '0');
-    -- apply_test('0', '1', '0', '0');
-    -- apply_test('1', '1', '1', '1');
-
 
     
     wait;

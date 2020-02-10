@@ -26,12 +26,7 @@ end architecture equation;
 --------------------------------
 architecture behavior of OR4 is
   begin
-    -- o_f <= '0' when (i_a = '0' and 
-                     -- i_b = '0' and 
-                     -- i_c = '0' and 
-                     -- i_d = '0')
-               -- else
-           -- '1';
+
            
     o_f <= '1' when i_a = '1' else 
            '1' when i_b = '1' else 
