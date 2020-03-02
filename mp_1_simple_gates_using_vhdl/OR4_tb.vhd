@@ -1,25 +1,24 @@
--- python C:\Users\Brandon\Documents\Personal_Projects\my_utils\modelsim_utils\auto_run.py -d run_cmd__NAND4.do
+-- python C:\Users\Brandon\Documents\Personal_Projects\my_utils\modelsim_utils\auto_run.py -d run_cmd__OR4.do
 
 library ieee;
--- python C:\Users\Brandon\Documents\Personal_Projects\my_utils\modelsim_utils\auto_run.py -d run_cmd__NAND4
-
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 
-entity NAND4_tb is
-end entity NAND4_tb;
+entity OR4_tb is
+end entity OR4_tb;
 
-architecture verify of NAND4_tb is
+architecture verify of OR4_tb is
   signal i_a   : std_logic;
   signal i_b   : std_logic;
   signal i_c   : std_logic;
   signal i_d   : std_logic;
   signal o_f   : std_logic;
   signal input : std_logic_vector (3 downto 0) := "0000";
+
 begin
-  -- Model Options:  cmpnt_prim, cmpnt_self, equation, behavior
-  duv: entity work.NAND4(cmpnt_self)
+  -- Model Options:  cmpnt, equation, behavior
+  duv: entity work.OR4(cmpnt)
     port map( i_a => i_a,
               i_b => i_b,
               i_c => i_c,
@@ -42,6 +41,14 @@ begin
       apply_test(input(3), input(2), input(1), input(0));
       input <= input + "0001";
      end loop;
+  
+  
+  
+    -- -- test
+    -- apply_test('0', '0', '0', '0');
+    -- apply_test('0', '1', '0', '0');
+    -- apply_test('1', '1', '1', '1');
+
 
     
     wait;

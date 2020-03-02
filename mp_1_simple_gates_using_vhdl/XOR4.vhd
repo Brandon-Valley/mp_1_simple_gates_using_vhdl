@@ -40,7 +40,7 @@ end architecture behavior;
 
 
 --------------------------------
--- Component Model - made of primative gates
+-- Component Model
 --------------------------------
 architecture cmpnt of XOR4 is
   component XOR2 is
@@ -49,6 +49,7 @@ architecture cmpnt of XOR4 is
            o_f : out std_logic);
   end component XOR2;
     
+  -- temp outs for AND2s
   signal f_1_o : std_logic; 
   signal f_2_o : std_logic; 
     
