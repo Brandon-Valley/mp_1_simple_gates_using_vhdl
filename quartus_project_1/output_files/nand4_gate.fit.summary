@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sun Mar 08 10:16:00 2020
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : nand4_gate
+Top-level Entity Name : nand4_gate
+Family : MAX V
+Device : 5M40ZM64C4
+Timing Models : Final
+Total logic elements : 1 / 40 ( 3 % )
+Total pins : 5 / 30 ( 17 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
