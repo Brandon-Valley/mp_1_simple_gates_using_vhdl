@@ -1,5 +1,5 @@
 Analysis & Synthesis report for nand4_gate
-Sun Mar 08 10:15:55 2020
+Sun Mar 22 19:46:47 2020
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,10 +41,10 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Mar 08 10:15:55 2020       ;
+; Analysis & Synthesis Status ; Successful - Sun Mar 22 19:46:47 2020       ;
 ; Quartus Prime Version       ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name               ; nand4_gate                                  ;
-; Top-level Entity Name       ; nand4_gate                                  ;
+; Top-level Entity Name       ; xor4_gate                                   ;
 ; Family                      ; MAX V                                       ;
 ; Total logic elements        ; 1                                           ;
 ; Total pins                  ; 5                                           ;
@@ -58,7 +58,7 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; nand4_gate         ; nand4_gate         ;
+; Top-level entity name                                                      ; xor4_gate          ; nand4_gate         ;
 ; Family name                                                                ; MAX V              ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -139,14 +139,13 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                     ;
-+-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path          ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                     ; Library ;
-+-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../renamed_for_quartus_hdl/nand4_gate.vhd ; yes             ; User VHDL File  ; C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate.vhd ;         ;
-; ../renamed_for_quartus_hdl/nand2_gate.vhd ; yes             ; User VHDL File  ; C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand2_gate.vhd ;         ;
-+-------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                   ;
++------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                    ; Library ;
++------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../renamed_for_quartus_hdl/xor4_gate.vhd ; yes             ; User VHDL File  ; C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate.vhd ;         ;
++------------------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -183,14 +182,13 @@ agreement for further details.
 +---------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                   ;
-+--------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+----------------------+--------------+
-; Compilation Hierarchy Node                       ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                     ; Entity Name          ; Library Name ;
-+--------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+----------------------+--------------+
-; |nand4_gate                                      ; 1 (0)       ; 0            ; 0          ; 5    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |nand4_gate                                             ; nand4_gate           ; work         ;
-;    |nand2_gate_gate_gate:nand2_gate_gate_gate_5| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |nand4_gate|nand2_gate_gate_gate:nand2_gate_gate_gate_5 ; nand2_gate_gate_gate ; work         ;
-+--------------------------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+----------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; |xor4_gate                 ; 1 (1)       ; 0            ; 0          ; 5    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |xor4_gate          ; xor4_gate   ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -215,28 +213,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Mar 08 10:15:40 2020
+    Info: Processing started: Sun Mar 22 19:46:28 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off quartus_test_project_1 -c nand4_gate
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate_tb.vhd
-    Info (12022): Found design unit 1: xor4_gate_gate_tb-verify File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate_tb.vhd Line: 11
-    Info (12023): Found entity 1: xor4_gate_gate_tb File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate_tb.vhd Line: 8
-Info (12021): Found 4 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate.vhd
-    Info (12022): Found design unit 1: xor4_gate_gate-equation File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate.vhd Line: 19
-    Info (12022): Found design unit 2: xor4_gate_gate-behavior File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate.vhd Line: 28
-    Info (12022): Found design unit 3: xor4_gate_gate-cmpnt File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate.vhd Line: 45
-    Info (12023): Found entity 1: xor4_gate_gate File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate.vhd
+    Info (12022): Found design unit 1: xor4_gate-behavior File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate.vhd Line: 28
+    Info (12023): Found entity 1: xor4_gate File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor4_gate.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor2_gate.vhd
     Info (12022): Found design unit 1: xor2_gate_gate_gate-cmpnt File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor2_gate.vhd Line: 13
     Info (12023): Found entity 1: xor2_gate_gate_gate File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/xor2_gate.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or4_gate_tb.vhd
     Info (12022): Found design unit 1: or4_gate_tb-verify File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or4_gate_tb.vhd Line: 11
     Info (12023): Found entity 1: or4_gate_tb File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or4_gate_tb.vhd Line: 8
-Info (12021): Found 4 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or4_gate.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or4_gate.vhd
     Info (12022): Found design unit 1: or4_gate-equation File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or4_gate.vhd Line: 18
-    Info (12022): Found design unit 2: or4_gate-behavior File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or4_gate.vhd Line: 27
-    Info (12022): Found design unit 3: or4_gate-cmpnt File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or4_gate.vhd Line: 43
     Info (12023): Found entity 1: or4_gate File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or4_gate.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or2_gate.vhd
     Info (12022): Found design unit 1: or2_gate_gate-equation File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/or2_gate.vhd Line: 12
@@ -247,11 +238,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
 Info (12021): Found 2 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate_tb.vhd
     Info (12022): Found design unit 1: nand4_gate_tb-verify File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate_tb.vhd Line: 13
     Info (12023): Found entity 1: nand4_gate_tb File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate_tb.vhd Line: 10
-Info (12021): Found 5 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate.vhd
-    Info (12022): Found design unit 1: nand4_gate-equation File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate.vhd Line: 19
-    Info (12022): Found design unit 2: nand4_gate-behavior File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate.vhd Line: 29
-    Info (12022): Found design unit 3: nand4_gate-cmpnt_prim File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate.vhd Line: 44
-    Info (12022): Found design unit 4: nand4_gate-cmpnt_self File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate.vhd Line: 72
+Info (12021): Found 2 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate.vhd
+    Info (12022): Found design unit 1: nand4_gate-behavior File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate.vhd Line: 29
     Info (12023): Found entity 1: nand4_gate File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand2_gate.vhd
     Info (12022): Found design unit 1: nand2_gate_gate_gate-equation File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand2_gate.vhd Line: 12
@@ -259,16 +247,15 @@ Info (12021): Found 2 design units, including 1 entities, in source file /users/
 Info (12021): Found 2 design units, including 1 entities, in source file /users/brandon/documents/cpe_5220_digital_systems_modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/and2_gate.vhd
     Info (12022): Found design unit 1: and2_gate-equation File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/and2_gate.vhd Line: 12
     Info (12023): Found entity 1: and2_gate File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/and2_gate.vhd Line: 6
-Info (12127): Elaborating entity "nand4_gate" for the top level hierarchy
-Info (12128): Elaborating entity "nand2_gate_gate_gate" for hierarchy "nand2_gate_gate_gate:nand2_gate_gate_gate_1" File: C:/Users/Brandon/Documents/CpE_5220_Digital_Systems_Modeling/mp_1_simple_gates_using_vhdl/renamed_for_quartus_hdl/nand4_gate.vhd Line: 86
+Info (12127): Elaborating entity "xor4_gate" for the top level hierarchy
 Info (21057): Implemented 6 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4769 megabytes
-    Info: Processing ended: Sun Mar 08 10:15:55 2020
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Peak virtual memory: 4765 megabytes
+    Info: Processing ended: Sun Mar 22 19:46:47 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:45
 
 

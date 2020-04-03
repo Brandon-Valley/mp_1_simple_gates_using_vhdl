@@ -1,5 +1,5 @@
 Flow report for mp1_quartus_test_proj_0
-Sun Mar 01 13:33:29 2020
+Sat Mar 21 09:03:13 2020
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Flow Failed - Sun Mar 01 13:33:29 2020      ;
+; Flow Status           ; Flow Failed - Sat Mar 21 09:03:13 2020      ;
 ; Quartus Prime Version ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name         ; mp1_quartus_test_proj_0                     ;
 ; Top-level Entity Name ; NAND2                                       ;
@@ -54,7 +54,7 @@ agreement for further details.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 03/01/2020 13:33:18     ;
+; Start date & time ; 03/21/2020 09:02:57     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; mp1_quartus_test_proj_0 ;
 +-------------------+-------------------------+
@@ -65,7 +65,7 @@ agreement for further details.
 +--------------------------+-------------------------------+-------------------------+-------------+------------+
 ; Assignment Name          ; Value                         ; Default Value           ; Entity Name ; Section Id ;
 +--------------------------+-------------------------------+-------------------------+-------------+------------+
-; COMPILER_SIGNATURE_ID    ; 1098527621849.158309119812276 ; --                      ; --          ; --         ;
+; COMPILER_SIGNATURE_ID    ; 1098527621849.158479937629628 ; --                      ; --          ; --         ;
 ; PROJECT_OUTPUT_DIRECTORY ; output_files                  ; --                      ; --          ; --         ;
 ; TOP_LEVEL_ENTITY         ; NAND2                         ; mp1_quartus_test_proj_0 ; --          ; --         ;
 +--------------------------+-------------------------------+-------------------------+-------------+------------+
@@ -76,8 +76,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4767 MB             ; 00:00:26                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:26                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4767 MB             ; 00:00:36                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:36                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for nand4_gate
-Sun Mar 08 10:16:05 2020
+Sun Mar 22 19:46:56 2020
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -200,7 +200,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Mar 08 10:16:03 2020
+    Info: Processing started: Sun Mar 22 19:46:54 2020
 Info: Command: quartus_sta quartus_test_project_1 -c nand4_gate
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -224,9 +224,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4674 megabytes
-    Info: Processing ended: Sun Mar 08 10:16:05 2020
+    Info: Peak virtual memory: 4673 megabytes
+    Info: Processing ended: Sun Mar 22 19:46:56 2020
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

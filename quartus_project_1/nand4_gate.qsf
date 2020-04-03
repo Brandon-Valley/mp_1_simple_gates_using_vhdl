@@ -39,11 +39,10 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY nand4_gate
+set_global_assignment -name TOP_LEVEL_ENTITY xor4_gate
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:13:22  MARCH 08, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
-set_global_assignment -name VHDL_FILE ../renamed_for_quartus_hdl/xor4_gate_tb.vhd
 set_global_assignment -name VHDL_FILE ../renamed_for_quartus_hdl/xor4_gate.vhd
 set_global_assignment -name VHDL_FILE ../renamed_for_quartus_hdl/xor2_gate.vhd
 set_global_assignment -name VHDL_FILE ../renamed_for_quartus_hdl/or4_gate_tb.vhd

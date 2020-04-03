@@ -1,38 +1,28 @@
-|nand4_gate
-i_a => nand2_gate_gate_gate:nand2_gate_gate_gate_1.i_a
-i_b => nand2_gate_gate_gate:nand2_gate_gate_gate_1.i_b
-i_c => nand2_gate_gate_gate:nand2_gate_gate_gate_3.i_a
-i_d => nand2_gate_gate_gate:nand2_gate_gate_gate_3.i_b
-o_f <= nand2_gate_gate_gate:nand2_gate_gate_gate_5.o_f
-
-
-|nand4_gate|nand2_gate_gate_gate:nand2_gate_gate_gate_1
+|xor4_gate
+i_a => o_f.IN0
+i_a => o_f.IN0
+i_a => o_f.IN0
 i_a => o_f.IN0
 i_b => o_f.IN1
-o_f <= o_f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|nand4_gate|nand2_gate_gate_gate:nand2_gate_gate_gate_2
-i_a => o_f.IN0
 i_b => o_f.IN1
-o_f <= o_f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|nand4_gate|nand2_gate_gate_gate:nand2_gate_gate_gate_3
-i_a => o_f.IN0
 i_b => o_f.IN1
-o_f <= o_f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|nand4_gate|nand2_gate_gate_gate:nand2_gate_gate_gate_4
-i_a => o_f.IN0
 i_b => o_f.IN1
-o_f <= o_f.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|nand4_gate|nand2_gate_gate_gate:nand2_gate_gate_gate_5
-i_a => o_f.IN0
-i_b => o_f.IN1
+i_c => o_f.IN1
+i_c => o_f.IN1
+i_c => o_f.IN1
+i_c => o_f.IN1
+i_c => o_f.IN1
+i_c => o_f.IN1
+i_c => o_f.IN1
+i_c => o_f.IN1
+i_d => o_f.IN1
+i_d => o_f.IN1
+i_d => o_f.IN1
+i_d => o_f.IN1
+i_d => o_f.IN1
+i_d => o_f.IN1
+i_d => o_f.IN1
+i_d => o_f.IN1
 o_f <= o_f.DB_MAX_OUTPUT_PORT_TYPE
 
 

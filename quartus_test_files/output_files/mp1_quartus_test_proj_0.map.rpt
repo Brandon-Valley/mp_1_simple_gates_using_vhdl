@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mp1_quartus_test_proj_0
-Sun Mar 01 13:33:29 2020
+Sat Mar 21 09:03:13 2020
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sun Mar 01 13:33:29 2020           ;
+; Analysis & Synthesis Status ; Failed - Sat Mar 21 09:03:13 2020           ;
 ; Quartus Prime Version       ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name               ; mp1_quartus_test_proj_0                     ;
 ; Top-level Entity Name       ; NAND2                                       ;
@@ -137,7 +137,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Mar 01 13:33:18 2020
+    Info: Processing started: Sat Mar 21 09:02:56 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mp1_quartus_test_proj_0 -c mp1_quartus_test_proj_0
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -186,8 +186,8 @@ Warning (12018): Entity "NAND2" will be ignored because it conflicts with Quartu
 Error (12007): Top-level design entity "NAND2" is undefined
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 8 warnings
     Error: Peak virtual memory: 4767 megabytes
-    Error: Processing ended: Sun Mar 01 13:33:29 2020
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:26
+    Error: Processing ended: Sat Mar 21 09:03:13 2020
+    Error: Elapsed time: 00:00:17
+    Error: Total CPU time (on all processors): 00:00:36
 
 

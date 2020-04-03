@@ -23,9 +23,9 @@ end architecture equation;
 
 
 
---------------------------------
+----------------------------
 -- Behavior Model
---------------------------------
+----------------------------
 architecture behavior of NAND4 is
   begin
     o_f <= '0' when (i_a = '1' and 
@@ -38,9 +38,9 @@ end architecture behavior;
 
 
 
---------------------------------
+----------------------------
 -- Component Model - Primitive
---------------------------------
+----------------------------
 architecture cmpnt_prim of NAND4 is
   component AND2 is
     port ( i_a : in  std_logic;
@@ -66,28 +66,28 @@ architecture cmpnt_prim of NAND4 is
 end architecture cmpnt_prim;
     
     
---------------------------------
--- Component Model - 2 Input Self
---------------------------------
-architecture cmpnt_self of NAND4 is
-  component NAND2 is
+----------------------------
+-- component model - 2 input self
+----------------------------
+architecture cmpnt_self of nand4 is
+  component nand2 is
     port ( i_a : in  std_logic;
            i_b : in  std_logic;
            o_f : out std_logic);
-  end component NAND2;
+  end component nand2;
     
-  -- temp outs for AND2s
+  -- temp outs for and2s
   signal f_1_o : std_logic; 
   signal f_2_o : std_logic; 
   signal f_3_o : std_logic; 
   signal f_4_o : std_logic; 
     
   begin
-    NAND2_1 : NAND2 port map (i_a,   i_b,   f_1_o);
-    NAND2_2 : NAND2 port map (f_1_o, f_1_o, f_2_o); -- NOT
-    NAND2_3 : NAND2 port map (i_c,   i_d,   f_3_o);
-    NAND2_4 : NAND2 port map (f_3_o, f_3_o, f_4_o); -- NOT
-    NAND2_5 : NAND2 port map (f_2_o, f_4_o, o_f);
+    nand2_1 : nand2 port map (i_a,   i_b,   f_1_o);
+    nand2_2 : nand2 port map (f_1_o, f_1_o, f_2_o); -- not
+    nand2_3 : nand2 port map (i_c,   i_d,   f_3_o);
+    nand2_4 : nand2 port map (f_3_o, f_3_o, f_4_o); -- not
+    nand2_5 : nand2 port map (f_2_o, f_4_o, o_f);
 end architecture cmpnt_self;
     
 
